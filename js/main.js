@@ -7,8 +7,8 @@ $('.open .bar-i').on('click', function () {
     if (isShown) {
         $('.side').animate({ left: `-${sideWidth}px` }, 500)
         $('ul').removeClass("slideup")
-        $('ul').addClass("initSlideup")
-
+ $('ul').addClass("initSlideup")
+           
         $('.bar-i .barr').removeClass('fa-xmark')
         $('.bar-i .barr').addClass('fa-bars')
         isShown = false
@@ -17,9 +17,9 @@ $('.open .bar-i').on('click', function () {
         $('.side').animate({ left: '0' }, 500)
         $('.bar-i .barr').removeClass('fa-bars')
         $('.bar-i .barr').addClass('fa-xmark')
-
-        $('ul').removeClass("initSlideup")
-        $('ul').addClass("slideup")
+     
+           $('ul').removeClass("initSlideup")
+           $('ul').addClass("slideup")
 
         isShown = true
     }
@@ -37,7 +37,7 @@ async function getDetailsOfMeal(mealId, termId) {
         var response = await mealDetails.json()
         console.log(response);
         displayDetails(response.meals, `${termId}`)
-        $(".loading").fadeOut(300)
+$(".loading").fadeOut(300)
     }
 }
 
@@ -119,8 +119,8 @@ function displayDetails(arr, selector) {
         
     </div>
     <div class="btn-group text-lg mb-3">
-        <button class="text-white bg-green-700 w-20 mx-auto py-2 px-3 rounded-md">Source</button>
-        <button class="text-white bg-red-700  w-20 mx-auto py-2 px-3 rounded-md">Youtube</button>
+        <button  class="text-white bg-green-700 w-20 mx-auto py-2 px-3 rounded-md"><a href="${arr[i].strSource}">Source</a></button>
+        <button  class="text-white bg-red-700  w-20 mx-auto py-2 px-3 rounded-md"><a href="${arr[i].strYoutube}">Youtube</a></button>
 
     </div>
     
@@ -171,7 +171,7 @@ async function getCategoryName() {
 
 /******************Display category Details ******/
 async function getCategorydetails(term) {
-
+     
     $(".loading").fadeIn(300)
     const categoryDetails = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${term}`);
     if (categoryDetails.status == 200) {
@@ -179,7 +179,7 @@ async function getCategorydetails(term) {
         console.log(data.meals);
 
         displayMeals(data.meals)
-        $(".loading").fadeOut(300)
+    $(".loading").fadeOut(300)
 
 
     }
@@ -248,7 +248,7 @@ async function getAreaDetails(term) {
         console.log(data.meals);
 
         displayAreaMeals(data.meals)
-        $(".loading").fadeOut(300)
+  $(".loading").fadeOut(300)
     }
 }
 
@@ -305,7 +305,7 @@ function displayIngred(arr) {
 
 
 async function getIngredDetails(term) {
-
+    
     $(".loading").fadeIn(300)
     const ingredDetails = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${term}`);
     if (ingredDetails.status == 200) {
@@ -313,7 +313,7 @@ async function getIngredDetails(term) {
         console.log(data.meals);
 
         displayIngredMeals(data.meals)
-        $(".loading").fadeOut(300)
+   $(".loading").fadeOut(300)
     }
 }
 
