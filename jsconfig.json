@@ -1,0 +1,15 @@
+{
+  "typeAcquisition": {
+    "include": ["jquery"]
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "php": "html",
+    "vue": "html"
+  },
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+
+}

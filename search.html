@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/ec7602c3ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="side fixed min-h-screen flex z-50">
+    <div class="list p-5  flex flex-col justify-between w-60 bg-black">
+      <div class="upper">
+        <ul class="initSlideup  ">
+          <li class="text-white pt-4"><a href="search.html">Search</li></a>
+          <li id="category" class="text-white pt-4"><a href="categories.html">Categories</li></a>
+          <li class="text-white pt-4"><a href="area.html">Area</li></a>
+          <li id="ingred" class="text-white pt-4"><a href="ingredients.html">Ingredients</li></a>
+          <li id="contact" class="text-white pt-4"><a href="contactUs.html">Contact us</li></a>
+        </ul>
+      </div>
+      <div class="footer text-white">
+        <div class="icons flex text-white gap-2">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <p class="f-text pt-2 mb-3">Copyright Â© 2019 All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="open flex flex-col justify-between min-h-screen bg-white text-center py-5 w-20 ">
+      <img src="./images/logo.png" alt="" class="mx-auto">
+      <div class="bar-i"><i class="fa-solid fa-bars barr "></i></div>
+      <div class="icon-2 flex flex-col gap-2">
+        <i class="fa-solid fa-globe" style="color: black;"></i>
+        <i class="fa-solid fa-share-nodes" style="color: black;"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex ms-auto">
+
+    <input id="word" type="text"
+      class="w-1/2 ms-32 me-8 my-8 p-2 text-white bg-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+      placeholder="Search by name">
+    <input id="letter" type="text"
+      class="w-1/2 me-32 ms-8 my-8 p-2 text-white bg-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+      placeholder="Search by first letter">
+
+
+  </div>
+  <div id="search" class="grid grid-cols-4  gap-x-8 gap-y-8 px-28 py-8 "></div>
+
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
