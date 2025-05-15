@@ -119,8 +119,8 @@ function displayDetails(arr, selector) {
         
     </div>
     <div class="btn-group text-lg mb-3">
-        <button  class="text-white bg-green-700 w-20 mx-auto py-2 px-3 rounded-md"><a href="${arr[i].strSource}">Source</a></button>
-        <button  class="text-white bg-red-700  w-20 mx-auto py-2 px-3 rounded-md"><a href="${arr[i].strYoutube}">Youtube</a></button>
+     <a href="${arr[i].strSource}" >  <button  class="text-white bg-green-700 w-20 mx-auto py-2 px-3 rounded-md">Source</button></a>
+     <a href="${arr[i].strYoutube}" >  <button  class="text-white bg-red-700  w-20 mx-auto py-2 px-3 rounded-md">Youtube</button></a>
 
     </div>
     
