@@ -7,10 +7,7 @@ html{
 }
 
 .loading{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+   
     min-height: 100vh;
 z-index: 999;
 background-color: var(--bg-color);
@@ -37,7 +34,7 @@ background-color: var(--bg-color);
 
 body {
     background-color: var(--bg-color);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ul{
