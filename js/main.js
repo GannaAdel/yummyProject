@@ -58,24 +58,20 @@ function displayMeal(arr) {
 }
 
 
-var list = []
-async function RandomMeals() {
 
+async function RandomMeals() {
     for (let i = 0; i < 25; i++) {
-        const res = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
+        const res = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=");
         if (res.status == 200) {
             var data = await res.json();
-            // console.log(data.meals[0].idMeal)
-            list.push(data.meals[0])
+            console.log(data.meals);
+            displayMeal(data.meals);
         }
     }
-    displayMeal(list);
-    console.log(list[data.meals.idMeal]);
-
-    return list[data.meals.idMeal]
+    
 }
 RandomMeals();
-// console.log(RandomMeals());
+
 
 
 
@@ -115,7 +111,8 @@ function displayDetails(arr, selector) {
     
     <h2 class="text-3xl my-3">Tags :</h2>
     <div class="tags flex gap-3 my-3 text-lg">
-         <div class="recipe-details bg-pink-200 text-red-900 rounded-md p-2">${arr[i].strTags}</div>
+         ${arr[i].strTags ? `<div class="recipe-details bg-pink-200 text-red-900 rounded-md p-2">${arr[i].strTags}</div>` : ""}
+
         
     </div>
     <div class="btn-group text-lg mb-3">
