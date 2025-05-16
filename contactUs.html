@@ -44,16 +44,16 @@
 
 
     <form action="" id="contact" class=" flex flex-col mx-auto justify-center h-screen ">
-        <div class="c-form form1 flex justify-center   ">
+        <div class="c-form form1 flex flex-col sm:flex-row items-center sm:justify-center   ">
 
-            <div class="input1 w-1/4 flex flex-col mx-2">
+            <div class="input1 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="text" id="userName" oninput="validation(this,'msgName')"
                     class=" my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Enter your name">
                 <p id="msgName" class="bg-red-300 p-4 rounded-md hidden">Enter valid name</p>
             </div>
 
-            <div class="input2 w-1/4 flex flex-col mx-2">
+            <div class="input2 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="text" id="email" oninput="validation(this,'msgEmail')"
                     class="  my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Enter your email">
@@ -63,16 +63,16 @@
         </div>
 
 
-        <div class="c-form form2 flex justify-center   ">
+        <div class="c-form form2 flex flex-col sm:flex-row items-center sm:justify-center    ">
 
-            <div class="input3 w-1/4 flex flex-col mx-2">
+            <div class="input3 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="text" id="phone" oninput="validation(this,'msgPhone')"
                     class="  my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Enter your phone">
                 <p id="msgPhone" class="bg-red-300 p-4 rounded-md hidden ">Enter valid phone</p>
             </div>
 
-            <div class="input4 w-1/4 flex flex-col mx-2">
+            <div class="input4 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="number" id="age" oninput="validation(this,'msgAge')"
                     class="  my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Enter your age">
@@ -82,16 +82,16 @@
         </div>
 
 
-        <div class="c-form form3 flex justify-center   ">
+        <div class="c-form form3 flex flex-col sm:flex-row items-center sm:justify-center    ">
 
-            <div class="input5 w-1/4 flex flex-col mx-2">
+            <div class="input5 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="text" id="password" oninput="validation(this,'msgPassword')"
                     class=" my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Enter your password">
                 <p id="msgPassword" class="bg-red-300 p-4 rounded-md hidden ">Enter valid password</p>
             </div>
 
-            <div class="input6 w-1/4 flex flex-col mx-2">
+            <div class="input6 w-1/2  sm:w-1/4 flex flex-col mx-2">
                 <input type="text" id="repassword" oninput="checkPasswordMatch()"
                     class="  my-4  p-2 text-black bg-white  focus:outline-none focus:ring-2 focus:ring-blue-400"
                     placeholder="Repassword">

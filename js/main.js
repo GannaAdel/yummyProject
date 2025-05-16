@@ -79,12 +79,12 @@ function displayDetails(arr, selector) {
     var details = ''
     for (let i = 0; i < arr.length; i++) {
         details += `
-    <div class="col-span-1   p-4">
+    <div class="lg:col-span-1 sm:col-span-2   p-4">
     <img src="${arr[i].strMealThumb}" alt="" class="d-img rounded-md">
     <h2 class="text-3xl text-white">${arr[i].strMeal}</h2>
   </div>
 
-  <div class="col-span-3  p-4  text-white ">
+  <div class="lg:col-span-3 sm:col-span-5  p-4  text-white ">
    <h2 class="text-3xl">Instructions</h2>
   <p class="text-lg mb-5">${arr[i].strInstructions}</p>
     <h2 class="mb-3 text-3xl">Area : ${arr[i].strArea}</h2>
